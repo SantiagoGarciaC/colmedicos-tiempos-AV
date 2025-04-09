@@ -1,0 +1,6 @@
+[theme]
+primaryColor = "#0E5A8A"         # Azul Colmédicos
+backgroundColor = "#F4F6F9"      # Fondo claro
+secondaryBackgroundColor = "#E0E6ED"  # Panel lateral
+textColor = "#262730"            # Texto
+font = "sans serif"              # Fuente (puede ser: sans serif, serif, monospace)
