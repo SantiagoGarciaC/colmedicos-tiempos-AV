@@ -17,7 +17,7 @@ scope = [
 ]
 
 # Convertir los secretos a JSON
-json_key = json.loads(json.dumps(st.secrets["gcp_service_account"]))
+json_key = dict(st.secrets["gcp_service_account"])
 creds = ServiceAccountCredentials.from_json_keyfile_dict(json_key, scope)
 
 # Autenticación
