@@ -31,7 +31,7 @@ data = sheet.get_all_records()
 
 # Configuración general
 st.set_page_config(page_title="Tiempos de Atención Red Nacional - Avianca", layout="wide")
-st.image("assets/logo.png", width=250, use_column_width=False)
+st.image("assets/logo.png", width=250, use_container_width=False)
 #st.image("colmedicos.png", width=200)
 st.title("Dashboard Tiempos de Atención Red Nacional - Avianca")
 st.markdown("Análisis de tiempos de atención en exámenes médicos de ingreso, control y egreso para pacientes de **Avianca**.")
