@@ -61,7 +61,7 @@ st.set_page_config(page_title="Tiempos de Atención - Avianca", layout="wide")
 
 col1, col2, col3 = st.columns([3, 6, 2])
 with col2:
-    st.image("assets/logo.png", width=350, use_column_width=False)
+    st.image("assets/logo.png", width=350,  use_container_width=False)
 st.title("Seguimiento tiempos de atención - Avianca")
 st.markdown("Análisis de tiempos de atención en exámenes médicos de ingreso, control, egreso y medicina laboral para pacientes de **Avianca**.")
 
