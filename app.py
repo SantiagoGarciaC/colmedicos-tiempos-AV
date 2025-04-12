@@ -47,6 +47,7 @@ def load_data():
     df["CumpleTiempo"] = df["TiempoAtencionMin"] <= 120
     # Calcular TiempoAtención en horas:
     df["TiempoAtencionHoras"] = df["TiempoAtencionMin"] / 60
+    return df
 
 df= load_data()
 
