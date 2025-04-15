@@ -371,12 +371,13 @@ if len(df_filtros)!=0:
 
     # Descargar tabla
     st.markdown("### 📥 Descargar datos filtrados")
-    def convertir_csv(df):
+    def convertir_excel(df):
         output = BytesIO()
-        df.to_csv(output, index=False)
+        df.to_excel(output, index=False)
         return output.getvalue()
 
-    st.download_button("Descargar CSV", data=convertir_csv(df_filtros), file_name="tiempos_filtrados.csv", mime="text/csv")
+    st.download_button("Descargar en Excel", data=convertir_excel(df_filtros), file_name="tiempos_filtrados.xlsx", 
+                       mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
 
 else:
     st.write("No hay atenciones disponibles para los filtros seleccionados.")
