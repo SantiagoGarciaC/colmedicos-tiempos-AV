@@ -44,7 +44,7 @@ def load_data():
     df['TiempoAtencionMin'] = (df['Hora fin'] - df['Hora inicio']).dt.total_seconds() / 60
     df['TiempoAtencionFormato'] = df['TiempoAtencionMin'].apply(lambda x: f"{int(x//60)}h {int(x%60)}m")
     df = df.rename(columns={'Anexo factura': 'Examen'})
-    df["CumpleTiempo"] = df["TiempoAtencionMin"] <= 120
+    df["CumpleTiempo"] = df["TiempoAtencionMin"] <= 135
     # Calcular TiempoAtención en horas:
     df["TiempoAtencionHoras"] = df["TiempoAtencionMin"] / 60
     return df
